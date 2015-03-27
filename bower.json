@@ -1,0 +1,11 @@
+{
+  "name": "source",
+  "private": true,
+  "dependencies": {
+    "jquery": "~1.11.1",
+    "modernizr": "~2.8.2"
+  },
+  "devDependencies": {
+    "purecss": "~0.6.0"
+  }
+}
