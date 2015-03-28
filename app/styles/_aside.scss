@@ -1,0 +1,23 @@
+aside {
+	.sidenav {
+		display: none;
+		position: fixed;
+		list-style: none;
+		height: 20%;
+		top: 40%;
+		right: 3%;
+
+		@media screen and (min-width: 35.5em) {
+			display: block;
+
+			.dot {
+				display: block;
+				background: #fefefe;
+				border-radius: 50%;
+				height: 0.3125rem;
+				width: 0.3125rem;
+				margin-bottom: 1.25rem;
+			}
+		}
+	}
+}

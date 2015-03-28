@@ -1,6 +1,12 @@
 // bower:scss
 // endbower
 
+@import "aside";
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   background: #242424;
   color: #fafafa;
