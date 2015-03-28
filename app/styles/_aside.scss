@@ -10,13 +10,40 @@ aside {
 		@media screen and (min-width: 35.5em) {
 			display: block;
 
+			a {
+				position: relative;
+			}
+
 			.dot {
 				display: block;
-				background: #fefefe;
+				background: $white;
 				border-radius: 50%;
 				height: 0.3125rem;
 				width: 0.3125rem;
 				margin-bottom: 1.25rem;
+			}
+
+			.label {
+				color: $white;
+				position: absolute;
+				top: -1.6875rem;
+				left: -5rem;
+				width: 4.375rem;
+				font-size: 0.625em;
+				text-transform: uppercase;
+				text-align: right;
+				opacity: 0;
+				transition: all .45s ease .5s;
+			}
+
+			a:hover {
+				.label {
+					opacity: 1;
+				}
+
+				.dot {
+					background: $orange;
+				}
 			}
 		}
 	}
