@@ -10,6 +10,7 @@
     <!-- build:css(.) styles/vendor.css -->
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <!-- bower:css -->
     <!-- endbower -->
     <!-- endbuild -->
@@ -25,53 +26,78 @@
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-
-    <div id="home">
+    <main>
+      <section id="home" class="home">
+        <div class="pure-g">
+          <div class="pure-u-1 pure-u-md-1-2"></div>
+          <div class="pure-u-1 pure-u-md-1-2 info">
+            <div class="pure-g">
+              <a class="relative" href="#about">
+                <div class="hover-frame"></div>
+                <div class="pure-u-1-4"><img class="pure-img" src="images/me.jpg" alt="My Photo"></div>
+                <div class="pure-u-3-4 l-box name">
+                  <h1>Armand Rozanski</h1>
+                  <h2>Web developer</h2>
+                </div>
+              </a>  
+            </div>
+            <div class="pure-g">
+              <div class="pure-u-3-4 relative">
+                <a href="#projects">
+                  <div class="hover-frame"></div>
+                  <img class="pure-img" src="images/projects/thmbs/dyson-v6.png">
+                  <span class="box-title">Recent projects</span>
+                </a>
+              </div>
+              <div class="pure-u-1-4 contact relative">
+                <a href="#contact">
+                  <div class="hover-frame"></div>
+                  <i class="fa fa-envelope fa-5x"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> <!--#home-->
+    
+      <section id="about">
+        <div class="story">
+          <div class="bg"></div>
+          <div class="float-right">
+            <h2>Multiple Backgrounds</h2>
+            <p>The multiple backgrounds applied to this section are moved in a similar way to the first section -- every time the user scrolls down the page by a pixel, the positions of the backgrounds are changed.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nibh erat, sagittis sit amet congue at, aliquam eu libero. Integer molestie, turpis vel ultrices facilisis, nisi mauris sollicitudin mauris, volutpat elementum enim urna eget odio. Donec egestas aliquet facilisis. Nunc eu nunc eget neque ornare fringilla. Nam vel sodales lectus. Nulla in pellentesque eros. Donec ultricies, enim vitae varius cursus, risus mauris iaculis neque, euismod sollicitudin metus erat vitae sapien. Sed pulvinar.</p>
+          </div>
+        </div> <!--.story-->
+      </section> <!--#about-->
+    
+    <section id="third">
       <div class="story">
           <div class="float-left">
-            <h2>(Almost) Static Background</h2>
-            <p>This section has a background that moves slightly slower than the user scrolls. This is achieved by changing the top position of the background for every pixel the page is scrolled.</p>
-          </div>
-      </div> <!--.story-->
-    </div> <!--#home-->
-  
-    <div id="about">
+              <h2>What Happens When JavaScript is Disabled?</h2>
+                <p>The user gets a slap! Actually, all that jQuery does is moves the backgrounds relative to the position of the scrollbar. Without it, the backgrounds simply stay put and the user would never know they are missing out on the awesome! CSS2 does a good enough job to still make the effect look cool.</p>
+            </div>
+        </div> <!--.story-->
+    </section> <!--#third-->
+    
+    <section id="fifth">
       <div class="story">
-        <div class="bg"></div>
-        <div class="float-right">
-          <h2>Multiple Backgrounds</h2>
-          <p>The multiple backgrounds applied to this section are moved in a similar way to the first section -- every time the user scrolls down the page by a pixel, the positions of the backgrounds are changed.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nibh erat, sagittis sit amet congue at, aliquam eu libero. Integer molestie, turpis vel ultrices facilisis, nisi mauris sollicitudin mauris, volutpat elementum enim urna eget odio. Donec egestas aliquet facilisis. Nunc eu nunc eget neque ornare fringilla. Nam vel sodales lectus. Nulla in pellentesque eros. Donec ultricies, enim vitae varius cursus, risus mauris iaculis neque, euismod sollicitudin metus erat vitae sapien. Sed pulvinar.</p>
-        </div>
-      </div> <!--.story-->
-    </div> <!--#about-->
-  
-  <div id="third">
-    <div class="story">
-        <div class="float-left">
-            <h2>What Happens When JavaScript is Disabled?</h2>
-              <p>The user gets a slap! Actually, all that jQuery does is moves the backgrounds relative to the position of the scrollbar. Without it, the backgrounds simply stay put and the user would never know they are missing out on the awesome! CSS2 does a good enough job to still make the effect look cool.</p>
-          </div>
-      </div> <!--.story-->
-  </div> <!--#third-->
-  
-  <div id="fifth">
-    <div class="story">
-        <p>ipsum lorem</p>
-      </div> <!--.story-->
-  </div> <!--#fifth-->
+          <p>ipsum lorem</p>
+        </div> <!--.story-->
+    </section> <!--#fifth-->
 
-  <div class="pure-g">
-    <div class="pure-u-1-3"><p>Thirds</p></div>
-    <div class="pure-u-1-3"><p>Thirds</p></div>
-    <div class="pure-u-1-3"><p>Thirds</p></div>
-  </div>
+    <div class="pure-g">
+      <div class="pure-u-1-3"><p>Thirds</p></div>
+      <div class="pure-u-1-3"><p>Thirds</p></div>
+      <div class="pure-u-1-3"><p>Thirds</p></div>
+    </div>
 
-  <div class="pure-g">
-    <div class="pure-u-1 pure-u-md-1-3"> <p>Thirds</p> </div>
-    <div class="pure-u-1 pure-u-md-1-3"> <p>Thirds</p> </div>
-    <div class="pure-u-1 pure-u-md-1-3"> <p>Thirds</p> </div>
-  </div>
+    <div class="pure-g">
+      <div class="pure-u-1 pure-u-md-1-3"> <p>Thirds</p> </div>
+      <div class="pure-u-1 pure-u-md-1-3"> <p>Thirds</p> </div>
+      <div class="pure-u-1 pure-u-md-1-3"> <p>Thirds</p> </div>
+    </div>
+  </main>
 
   <aside>
     <ul id="sidenav" class="sidenav">

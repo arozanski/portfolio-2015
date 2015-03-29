@@ -1,0 +1,90 @@
+section {
+
+	/* generic frame styles */
+	a .hover-frame {
+		border: 8px solid #ccc;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		transition: opacity .3s ease;
+	}
+
+	a:hover .hover-frame {
+		opacity: .1;
+	}
+
+	/* section specific */
+	&.home{
+		background:url(../images/background1.png) center top no-repeat fixed;
+		height: 37.5rem;
+		margin: 0 auto;
+		padding: 0;
+
+		.info {
+			.name {
+				background: $grey;
+			}
+
+			.contact {
+				background: $orange;
+			}
+
+			@media screen and (min-width: 48em) {
+				margin: 4.375rem 9.375rem 0 -9.375rem;
+			}
+		}
+
+		.box-title {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			background: rgba(255,255,255,0.1);
+			padding: 0.625rem 1.25rem;
+			font-weight: 100;
+			text-transform: uppercase;
+		}
+
+		.fa {
+			position: absolute;
+			top: 37%;
+			width: 100%;
+			text-align: center;
+		}
+	}
+
+	&#about{
+		background: url(../images/background2.png) 50% 0 no-repeat fixed;
+		color: white;
+		height: 1300px;
+		margin: 0 auto;
+		overflow: hidden;
+		padding: 0;
+	}
+
+	&#about .bg{
+		background: url(../images/imac.png) 50% 0 no-repeat fixed;
+		height: 1300px;
+		margin: 0 auto;
+		padding: 0;
+		position: absolute;
+		width: 900px;
+		z-index: 200;
+	}
+
+	&#third{
+		background: url(../images/background3.png) 50% 0 no-repeat fixed;
+		color: white;
+		height: 650px;
+		padding: 100px 0 0 0; 
+	}
+
+	&#fifth{
+		background: #ccc;
+		height: 400px;
+		margin: 0 auto;
+		padding: 40px 0 0 0;
+	}
+}
