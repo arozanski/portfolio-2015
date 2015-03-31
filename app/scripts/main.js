@@ -24,7 +24,7 @@ var app = (function () {
 		$('#home').parallax('50%', 0.1);
 		//$('section').css({ 'height': window.innerHeight });
 		$('#about').parallax('50%', 0.1);
-		$('.bg').parallax('50%', 0.4);
+		//$('.bg').parallax('50%', 0.4);
 		$('#third').parallax('50%', 0.3);
 	};
 

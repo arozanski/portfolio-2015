@@ -2,7 +2,7 @@ section {
 
 	/* generic frame styles */
 	a .hover-frame {
-		border: 8px solid #ccc;
+		border: 0.5rem solid #222;
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -13,7 +13,29 @@ section {
 	}
 
 	a:hover .hover-frame {
-		opacity: .1;
+		opacity: .3;
+	}
+
+	.story {
+		min-height: 18.75rem;
+	}
+
+	.icon {
+		position: absolute;
+		right: 5rem;
+		bottom: 0;
+		display: none;
+
+
+		@media screen and (min-width: $sm) and (max-width: $lg) {
+			display: inline-block;
+			font-size: 5em;
+		}
+
+		@media screen and (min-width: $lg) {
+			display: inline-block;
+			font-size: 7.5rem;
+		}
 	}
 
 	/* section specific */
@@ -25,14 +47,18 @@ section {
 
 		.info {
 			.name {
-				background: $grey;
+				background: $blue;
+
+				h2 {
+					margin-bottom: 0;
+				}
 			}
 
 			.contact {
 				background: $orange;
 			}
 
-			@media screen and (min-width: 48em) {
+			@media screen and (min-width: $md) {
 				margin: 4.375rem 9.375rem 0 -9.375rem;
 			}
 		}
@@ -49,39 +75,50 @@ section {
 
 		.fa {
 			position: absolute;
-			top: 37%;
 			width: 100%;
 			text-align: center;
+			margin: auto;
+	 		top: 0; 
+	 		left: 0; 
+	 		bottom: 0; 
+	 		right: 0;
+
+	 		@media screen and (min-width: $sm) and (max-width: $lg) { 
+	 			font-size: 3em;
+	 			height: 3rem;
+	 		}
+
+	 		@media screen and (min-width: $lg) { 
+	 			font-size: 4em;
+	 			height: 4rem;
+	 		}
 		}
 	}
 
-	&#about{
-		background: url(../images/background2.png) 50% 0 no-repeat fixed;
-		color: white;
-		height: 1300px;
+	&.about{
+		background: $white;
+		color: $black;
+		min-height: 18.75rem;
 		margin: 0 auto;
 		overflow: hidden;
 		padding: 0;
 	}
 
-	&#about .bg{
-		background: url(../images/imac.png) 50% 0 no-repeat fixed;
-		height: 1300px;
-		margin: 0 auto;
-		padding: 0;
-		position: absolute;
-		width: 900px;
-		z-index: 200;
+	&.skills{
+		background: url(../images/background2.png) 50% 0 no-repeat fixed;
+		color: white;
+		height: 650px;
+		padding: 100px 0 0 0; 
 	}
 
-	&#third{
+	&.other-projects{
 		background: url(../images/background3.png) 50% 0 no-repeat fixed;
 		color: white;
 		height: 650px;
 		padding: 100px 0 0 0; 
 	}
 
-	&#fifth{
+	&.contact{
 		background: #ccc;
 		height: 400px;
 		margin: 0 auto;

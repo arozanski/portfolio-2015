@@ -2,9 +2,9 @@
 <html class="no-js">
   <head>
     <meta charset="utf-8">
-    <title>source</title>
+    <title>Armand Rozanski - portfolio</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/favicon.ico">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
@@ -34,8 +34,8 @@
             <div class="pure-g">
               <a class="relative" href="#about">
                 <div class="hover-frame"></div>
-                <div class="pure-u-1-4"><img class="pure-img" src="images/me.jpg" alt="My Photo"></div>
-                <div class="pure-u-3-4 l-box name">
+                <div class="pure-u-1-4"><img class="pure-img" id="mephoto" src="images/me.jpg" alt="My Photo"></div>
+                <div class="pure-u-3-4 l-box name" id="name">
                   <h1>Armand Rozanski</h1>
                   <h2>Web developer</h2>
                 </div>
@@ -52,7 +52,7 @@
               <div class="pure-u-1-4 contact relative">
                 <a href="#contact">
                   <div class="hover-frame"></div>
-                  <i class="fa fa-envelope fa-5x"></i>
+                  <i class="fa fa-envelope fa-4x"></i>
                 </a>
               </div>
             </div>
@@ -60,52 +60,76 @@
         </div>
       </section> <!--#home-->
     
-      <section id="about">
-        <div class="story">
-          <div class="bg"></div>
-          <div class="float-right">
-            <h2>Multiple Backgrounds</h2>
-            <p>The multiple backgrounds applied to this section are moved in a similar way to the first section -- every time the user scrolls down the page by a pixel, the positions of the backgrounds are changed.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nibh erat, sagittis sit amet congue at, aliquam eu libero. Integer molestie, turpis vel ultrices facilisis, nisi mauris sollicitudin mauris, volutpat elementum enim urna eget odio. Donec egestas aliquet facilisis. Nunc eu nunc eget neque ornare fringilla. Nam vel sodales lectus. Nulla in pellentesque eros. Donec ultricies, enim vitae varius cursus, risus mauris iaculis neque, euismod sollicitudin metus erat vitae sapien. Sed pulvinar.</p>
+      <section id="about" class="about">
+        <div class="story relative">
+          <div class="icon">
+            <i class="fa fa-user"></i>
           </div>
-        </div> <!--.story-->
+          <div class="pure-g">
+            <div class="pure-u-1 pure-u-sm-3-4 l-box">
+              <h2>About me</h2>
+              <p>I am highly creative and analytical Web Developer with nine years experience in developing and managing websites across many businesses including high profile clients like Electrolux, Robbie Williams, HSBC, Santander or Dyson.</p>
+              <p>Possess excellent knowledge of the latest front-end development technologies HTML5/CSS3, object oriented JavaScript including frameworks like Backbone, Meteor, Angular.</p>
+              <p>Versatile individual who is capable of adapting to any given situation. Passionate about projects and constantly improving skill set, thriving on the cutting edge technologies.</p>
+            </div>
+          </div>
+        </div>
       </section> <!--#about-->
     
-    <section id="third">
-      <div class="story">
-          <div class="float-left">
-              <h2>What Happens When JavaScript is Disabled?</h2>
+      <section id="skills" class="skills">
+        <div class="story">
+            <div class="pure-g">
+              <div class="pure-u-1">
+                <h2>skills</h2>
                 <p>The user gets a slap! Actually, all that jQuery does is moves the backgrounds relative to the position of the scrollbar. Without it, the backgrounds simply stay put and the user would never know they are missing out on the awesome! CSS2 does a good enough job to still make the effect look cool.</p>
+              </div>
             </div>
-        </div> <!--.story-->
-    </section> <!--#third-->
-    
-    <section id="fifth">
-      <div class="story">
-          <p>ipsum lorem</p>
-        </div> <!--.story-->
-    </section> <!--#fifth-->
+          </div> 
+      </section> <!--#skills-->
 
-    <div class="pure-g">
-      <div class="pure-u-1-3"><p>Thirds</p></div>
-      <div class="pure-u-1-3"><p>Thirds</p></div>
-      <div class="pure-u-1-3"><p>Thirds</p></div>
-    </div>
+      <section id="recent-projects" class="recent-projects">
+        <div class="story">
+            <div class="pure-g">
+              <div class="pure-u-1">
+                <h2>recent projects</h2>
+                <p>The user gets a slap! Actually, all that jQuery does is moves the backgrounds relative to the position of the scrollbar. Without it, the backgrounds simply stay put and the user would never know they are missing out on the awesome! CSS2 does a good enough job to still make the effect look cool.</p>
+              </div>
+            </div>
+          </div> 
+      </section> <!--#recent-projects-->
 
-    <div class="pure-g">
-      <div class="pure-u-1 pure-u-md-1-3"> <p>Thirds</p> </div>
-      <div class="pure-u-1 pure-u-md-1-3"> <p>Thirds</p> </div>
-      <div class="pure-u-1 pure-u-md-1-3"> <p>Thirds</p> </div>
-    </div>
+      <section id="other-projects" class="other-projects">
+        <div class="story">
+            <div class="pure-g">
+              <div class="pure-u-1">
+                <h2>other projects</h2>
+                <p>The user gets a slap! Actually, all that jQuery does is moves the backgrounds relative to the position of the scrollbar. Without it, the backgrounds simply stay put and the user would never know they are missing out on the awesome! CSS2 does a good enough job to still make the effect look cool.</p>
+              </div>
+            </div>
+          </div> 
+      </section> <!--#other-projects-->
+
+      <section id="contact" class="contact">
+        <div class="story">
+            <div class="pure-g">
+              <div class="pure-u-1">
+                <h2>contact</h2>
+                  <p>ipsum lorem</p>
+              </div>
+            </div>
+          </div> 
+      </section> <!--#contact-->
+
   </main>
 
   <aside>
     <ul id="sidenav" class="sidenav">
       <li><a href="#home"><span class="dot"></span><span class="label">Home</span></a></li>
       <li><a href="#about"><span class="dot"></span><span class="label">About</span></a></li>
-      <li><a href="#third"><span class="dot"></span></a></li>
-      <li><a href="#fourth"><span class="dot"></span></a></li>
-      <li><a href="#fifth"><span class="dot"></span></a></li>
+      <li><a href="#skills"><span class="dot"></span><span class="label">Skills</span></a></a></li>
+      <li><a href="#recent-projects"><span class="dot"></span><span class="label">Recent projects</span></a></a></li>
+      <li><a href="#other-projects"><span class="dot"></span><span class="label">Other projects</span></a></a></li>
+      <li><a href="#contact"><span class="dot"></span><span class="label">Contact</span></a></a></li>
     </ul>
   </aside>
 
