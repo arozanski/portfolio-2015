@@ -12,6 +12,8 @@ var app = (function () {
 	var _bind = function() {
 		window.onresize = _adjust;  
 		_inview($('#skills'));	
+		_inview($('#scene-v6'));	
+		_inview($('#scene-360'));	
 	};
 
 	var _inview = function(el) {
@@ -34,10 +36,8 @@ var app = (function () {
 		//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
 		//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
 		$('#home').parallax('50%', 0.1);
-		//$('section').css({ 'height': window.innerHeight });
-		$('#about').parallax('50%', 0.1);
-		//$('.bg').parallax('50%', 0.4);
 		$('#skills').parallax('50%', 0.3);
+		$('#other-projects').parallax('50%', 0.2);
 	};
 
 	var _adjust = function() {
