@@ -9,7 +9,18 @@ var app = (function () {
 	};
 
 	var _bind = function() {
-		window.onresize = _adjust;  	
+		window.onresize = _adjust;  
+		_inview($('#skills'));	
+	};
+
+	var _inview = function(el) {
+		$(el).on('inview', function (ev, visible) {
+		    if (visible === true) {
+		        $(this).addClass('inview');
+		    }else{
+		      $(this).removeClass('inview');
+		    }
+		});
 	};
 
 	var _localscroll = function() {
@@ -25,7 +36,7 @@ var app = (function () {
 		//$('section').css({ 'height': window.innerHeight });
 		$('#about').parallax('50%', 0.1);
 		//$('.bg').parallax('50%', 0.4);
-		$('#third').parallax('50%', 0.3);
+		$('#skills').parallax('50%', 0.3);
 	};
 
 	var _adjust = function() {

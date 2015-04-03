@@ -39,7 +39,7 @@ section {
 	}
 
 	/* section specific */
-	&.home{
+	&.home {
 		background:url(../images/background1.png) center top no-repeat fixed;
 		height: 37.5rem;
 		margin: 0 auto;
@@ -95,7 +95,7 @@ section {
 		}
 	}
 
-	&.about{
+	&.about {
 		background: $white;
 		color: $black;
 		min-height: 18.75rem;
@@ -104,21 +104,101 @@ section {
 		padding: 0;
 	}
 
-	&.skills{
+	&.skills {
 		background: url(../images/background2.png) 50% 0 no-repeat fixed;
 		color: white;
-		height: 650px;
-		padding: 100px 0 0 0; 
+		padding: 6.25rem 0 0 0; 
+
+		.skill {
+			height: 6.375rem;
+			margin-bottom: 3.125rem;
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+			opacity: 0.3;
+			transition: opacity 1.5s ease 1s;
+			position: relative;
+
+			&:hover, .touch & {
+				span {
+					opacity: 1;
+				}
+			}
+		}
+
+		&.inview {
+			.skill {
+				opacity: 1;
+			}
+		}
+
+		span {
+			opacity: 0;
+			transition: opacity .3s ease;
+			position: absolute;
+			bottom: -1.9375rem;
+			text-align: center;
+			width: 100%;
+			font-weight: 100;
+		}
+
+		.html5 {
+			background-image: url(../images/logos/html5.svg);
+		}
+
+		.css3 {
+			background-image: url(../images/logos/css3.svg);
+		}
+
+		.jquery {
+			background-image: url(../images/logos/jquery.svg);
+		}
+
+		.backbone {
+			background-image: url(../images/logos/backbone.svg);
+		}
+
+		.meteor {
+			background-image: url(../images/logos/meteor.png);
+		}
+
+		.git {
+			background-image: url(../images/logos/git.svg);
+		}
+
+		.yeoman {
+			background-image: url(../images/logos/yeoman.svg);
+		}
+
+		.grunt {
+			background-image: url(../images/logos/grunt.svg);
+		}
+
+		.bower {
+			background-image: url(../images/logos/bower.svg);
+		}
+
+		.less {
+			background-image: url(../images/logos/less.svg);
+		}
+
+		.sass {
+			background-image: url(../images/logos/sass.png);
+		}
+
+		.modernizr {
+			background-image: url(../images/logos/modernizr.png);
+		}
 	}
 
-	&.other-projects{
+	&.other-projects {
 		background: url(../images/background3.png) 50% 0 no-repeat fixed;
 		color: white;
 		height: 650px;
 		padding: 100px 0 0 0; 
 	}
 
-	&.contact{
+	&.contact {
 		background: #ccc;
 		height: 400px;
 		margin: 0 auto;
