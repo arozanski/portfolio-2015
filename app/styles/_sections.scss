@@ -191,6 +191,39 @@ section {
 		}
 	}
 
+	&.recent-projects {
+		.recent-project-wrapper {
+			text-align: center;
+
+			.desktop {
+				img {
+					width: 75%;
+				}
+			}
+
+			.tablet {
+				right: 0;
+				bottom: 0;
+				left: inherit !important;
+				top: 50% !important;
+
+				img {
+					width: 75%;
+				}
+			}
+
+			.mobile {
+				top: 45% !important;
+				left: 10% !important;
+
+				img {
+					width: 75%;
+				}
+			}
+		}
+
+	}
+
 	&.other-projects {
 		background: url(../images/background3.png) 50% 0 no-repeat fixed;
 		color: white;

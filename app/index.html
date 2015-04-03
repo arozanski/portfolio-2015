@@ -103,9 +103,23 @@
       <section id="recent-projects" class="recent-projects">
         <div class="story">
             <div class="pure-g">
-              <div class="pure-u-1">
-                <h2>recent projects</h2>
-                <p>The user gets a slap! Actually, all that jQuery does is moves the backgrounds relative to the position of the scrollbar. Without it, the backgrounds simply stay put and the user would never know they are missing out on the awesome! CSS2 does a good enough job to still make the effect look cool.</p>
+              <div class="pure-u-1 l-box">
+                <h2><i class="fa fa-exclamation-circle"></i> Recent projects</h2>
+                <div class="recent-project-wrapper relative">
+                  <ul id="scene-v6" data-friction-x="0.4" data-friction-y="0.5">
+                    <li class="layer desktop" data-depth="0.20"><img src="images/projects/dyson-v6-desktop.png" alt="Dyson V6 Desktop"></li>
+                    <li class="layer tablet" data-depth="0.40"><img src="images/projects/dyson-v6-tablet.png" alt="Dyson V6 Tablet"></li>
+                    <li class="layer mobile" data-depth="0.60"><img src="images/projects/dyson-v6-mobile.png" alt="Dyson V6 Mobile"></li>
+                  </ul>
+                  <a class="pure-button" href="http://www.dysonv6.com">Visit website</a>
+                  <hr>
+                  <ul id="scene-360" data-friction-x="0.4" data-friction-y="0.5">
+                    <li class="layer desktop" data-depth="0.20"><img src="images/projects/dyson-360-desktop.png" alt="Dyson 360 eye Desktop"></li>
+                    <li class="layer tablet" data-depth="0.40"><img src="images/projects/dyson-360-tablet.png" alt="Dyson 360 eye Tablet"></li>
+                    <li class="layer mobile" data-depth="0.60"><img src="images/projects/dyson-360-mobile.png" alt="Dyson 360 eye Mobile"></li>
+                  </ul>
+                  <a class="pure-button" href="http://www.dyson360eye.com">Visit website</a>
+                </div>
               </div>
             </div>
           </div> 
@@ -151,6 +165,7 @@
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <!-- endbower -->
   <script src="bower_components/jquery.parallax/jquery.parallax.js"></script>
+  <script src="bower_components/parallax/deploy/jquery.parallax.js"></script>
   <script src="bower_components/jquery.localScroll/jquery.localScroll.js"></script>
   <script src="bower_components/jquery.scrollTo/jquery.scrollTo.js"></script>
   <script src="bower_components/jquery.inview/jquery.inview.js"></script>

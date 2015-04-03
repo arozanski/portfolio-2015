@@ -6,6 +6,7 @@ var app = (function () {
 		_adjust();
 		_localscroll();
 		_parallax();
+		_parallax2();
 	};
 
 	var _bind = function() {
@@ -43,6 +44,11 @@ var app = (function () {
 		$('#name').css({
 			'height': $('#mephoto').width()
 		});
+	};
+
+	var _parallax2 = function() {
+		$('#scene-v6').prllx();
+		$('#scene-360').prllx();
 	};
 
 	return {
