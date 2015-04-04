@@ -126,51 +126,51 @@ section {
 			}
 
 			&.html5 {
-				transition-delay: 1s;
+				transition-delay: .5s;
 			}
 
 			&.css3 {
-				transition-delay: 1.1s;
+				transition-delay: .6s;
 			}
 
 			&.jquery {
-				transition-delay: 1.2s;
+				transition-delay: .7s;
 			}
 
 			&.backbone {
-				transition-delay: 1.3s;
+				transition-delay: .8s;
 			}
 
 			&.meteor {
-				transition-delay: 1.4s;
+				transition-delay: .9s;
 			}
 
 			&.git {
-				transition-delay: 1.5s;
+				transition-delay: 1s;
 			}
 
 			&.yeoman {
-				transition-delay: 1.6s;
+				transition-delay: 1.1s;
 			}
 
 			&.grunt {
-				transition-delay: 1.7s;
+				transition-delay: 1.2s;
 			}
 
 			&.bower {
-				transition-delay: 1.8s;
+				transition-delay: 1.3s;
 			}
 
 			&.less {
-				transition-delay: 1.9s;
+				transition-delay: 1.4s;
 			}
 
 			&.sass {
-				transition-delay: 2s;
+				transition-delay: 1.5s;
 			}
 
 			&.modernizr {
-				transition-delay: 2.1s;
+				transition-delay: 1.6s;
 			}
 		}
 
@@ -296,10 +296,27 @@ section {
 	}
 
 	&.other-projects {
-		background: url(../images/background3.png) 50% 0 no-repeat fixed;
-		color: white;
-		height: 650px;
-		padding: 100px 0 0 0; 
+		//background: url(../images/background3.png) 50% 0 no-repeat fixed;
+		color: white; 
+
+		.project {
+			position: relative;
+
+			img {
+				max-width: 100%;
+			}
+
+			.caption {
+				position: absolute;
+				width: 100%;
+				bottom: 0;
+				background: rgba(100, 100, 100, 0.3);
+
+				a {
+					float: right;
+				}
+			}
+		}
 	}
 
 	&.contact {
