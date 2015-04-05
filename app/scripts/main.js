@@ -7,6 +7,7 @@ var app = (function () {
 		_localscroll();
 		_parallax();
 		_parallax2();
+		_form();
 	};
 
 	var _bind = function() {
@@ -42,7 +43,7 @@ var app = (function () {
 	};
 
 	var _adjust = function() {
-		$('#name').css({
+		$('#me-name').css({
 			'height': $('#mephoto').width()
 		});
 
@@ -61,6 +62,35 @@ var app = (function () {
 	var _parallax2 = function() {
 		$('#scene-v6').prllx();
 		$('#scene-360').prllx();
+	};
+
+	var _form = function() {
+		$('#contactFrm').validate({
+            rules: {
+                name: 'required',
+                email: {
+                  required: true,
+                  email: true
+                },
+                message: 'required'
+            },
+            submitHandler: function() {
+                var url = 'http://armand.rozanski.pro/mailsender.php';
+                $.post(url, $('#contact').serialize(), function() {
+                    $('#successMsg').fadeIn(300);
+                    $('#contact input[type="text"]').val('');
+                    $('#contact textarea').val('');
+                }).fail(function() {
+                    $('#errorMsg').fadeIn(300);
+                });
+                return false;
+            }
+        });
+
+        $('.close').bind('click', function(e) {
+        	e.preventDefault();
+            $(this).parent().fadeOut(300);
+        });
 	};
 
 	return {

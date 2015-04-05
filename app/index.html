@@ -35,7 +35,7 @@
               <a class="relative" href="#about">
                 <div class="hover-frame"></div>
                 <div class="pure-u-1-4"><img class="pure-img" id="mephoto" src="images/me.jpg" alt="My Photo"></div>
-                <div class="pure-u-3-4 l-box name" id="name">
+                <div class="pure-u-3-4 l-box name" id="me-name">
                   <h1>Armand Rozanski</h1>
                   <h2>Web developer</h2>
                 </div>
@@ -45,7 +45,7 @@
               <div class="pure-u-3-4 relative">
                 <a href="#recent-projects" id="rc-link">
                   <div class="hover-frame"></div>
-                  <img class="pure-img" src="images/projects/thmbs/dyson-v6.png">
+                  <img class="pure-img" src="images/projects/thmbs/dyson-v6.png" alt="Dyson v6">
                   <span class="box-title">Recent projects</span>
                 </a>
               </div>
@@ -132,7 +132,7 @@
                 <h2><i class="fa fa-cogs"></i>Other projects</h2>
                 <div class="pure-g">
                   <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 project">
-                    <img src="images/projects/thmbs/dyson-v6.jpg" alt=""/>
+                    <img src="images/projects/thmbs/dyson-v6.jpg" alt="Dyson v6"/>
                     <div class="caption">Dyson V6 
                       <a class="pure-button" href="http://www.dyson360eye.com">
                         <i class="fa fa-external-link"></i>
@@ -140,7 +140,7 @@
                     </div>
                   </div>
                   <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 project">
-                    <img src="images/projects/thmbs/dyson-v6.jpg" alt=""/>
+                    <img src="images/projects/thmbs/dyson-v6.jpg" alt="Dyson v6"/>
                     <div class="caption">Dyson V6 
                       <a class="pure-button" href="http://www.dyson360eye.com">
                         <i class="fa fa-external-link"></i>
@@ -148,7 +148,7 @@
                     </div>
                   </div>
                   <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 project">
-                    <img src="images/projects/thmbs/dyson-v6.jpg" alt=""/>
+                    <img src="images/projects/thmbs/dyson-v6.jpg" alt="Dyson v6"/>
                     <div class="caption">Dyson V6 
                       <a class="pure-button" href="http://www.dyson360eye.com">
                         <i class="fa fa-external-link"></i>
@@ -156,7 +156,7 @@
                     </div>
                   </div>
                   <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 project">
-                    <img src="images/projects/thmbs/dyson-v6.jpg" alt=""/>
+                    <img src="images/projects/thmbs/dyson-v6.jpg" alt="Dyson v6"/>
                     <div class="caption">Dyson V6 
                       <a class="pure-button" href="http://www.dyson360eye.com">
                         <i class="fa fa-external-link"></i>
@@ -164,7 +164,7 @@
                     </div>
                   </div>
                   <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 project">
-                    <img src="images/projects/thmbs/dyson-v6.jpg" alt=""/>
+                    <img src="images/projects/thmbs/dyson-v6.jpg" alt="Dyson v6"/>
                     <div class="caption">Dyson V6 
                       <a class="pure-button" href="http://www.dyson360eye.com">
                         <i class="fa fa-external-link"></i>
@@ -172,7 +172,7 @@
                     </div>
                   </div>
                   <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 project">
-                    <img src="images/projects/thmbs/dyson-v6.jpg" alt=""/>
+                    <img src="images/projects/thmbs/dyson-v6.jpg" alt="Dyson v6"/>
                     <div class="caption">Dyson V6 
                       <a class="pure-button" href="http://www.dyson360eye.com">
                         <i class="fa fa-external-link"></i>
@@ -208,39 +208,39 @@
                         <li class="google">
                             <a href="https://plus.google.com/u/0/+ArmandR%C3%B3%C5%BCa%C5%84ski/about" title="Armand Rozanski @ Google+"><i class="fa fa-google-plus"></i></a>
                         </li>
-                    </ul>
+                      </ul>
                     </div>
                   </div>
                   <div class="pure-g">
                     <div class="pure-u-1 pure-u-md-1-2">
-                      <form id="contact" class="pure-form pure-form-stacked">
+                      <form id="contactFrm">
                         <fieldset>
                           <div class="group">      
-                              <input class="pure-input-1" type="text" name="name" id="name">
+                              <input type="text" name="name" id="name">
                               <span class="highlight"></span>
                               <span class="bar"></span>
                               <label for="name">Name</label>
                             </div>
                             <div class="group">      
-                              <input class="pure-input-1" type="text" name="email" id="email">
+                              <input type="text" name="email" id="email">
                               <span class="highlight"></span>
                               <span class="bar"></span>
                               <label for="email">Email</label>
                             </div>
                             <div class="group">      
-                              <textarea class="pure-input-1" type="text" name="message" id="message"></textarea>
+                              <textarea name="message" id="message"></textarea>
                               <span class="highlight"></span>
                               <span class="bar textarea"></span>
                               <label for="message">Message</label>
                             </div>
-                          <button type="submit" id="submit">SEND</button>
-                          <div class="message error red" id="errorMsg">Error, unable to send <span class="close">x</span></div>
-                          <div class="message success" id="successMsg">Message sent, thank you! <span class="close">x</span></div>
+                          <button type="submit">SEND</button>
+                          <div class="message error red" id="errorMsg">Error, unable to send <span class="close"><i class="fa fa-close"></i></span></div>
+                          <div class="message success" id="successMsg">Message sent, thank you! <span class="close"><i class="fa fa-close"></i></span></div>
                         </fieldset>
                       </form>
                     </div>
                     <div class="pure-u-1 pure-u-md-1-2">
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2472.9960846321283!2d-0.028100149999988413!3d51.696516749999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876203c8b177fcf%3A0x3f7e7c5763051e90!2sCheshunt%2C+Waltham+Cross%2C+Hertfordshire+EN8+8TY!5e0!3m2!1sen!2suk!4v1422308425927" width="100%" height="300" frameborder="0" style="border:0"></iframe>
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2472.9960846321283!2d-0.028100149999988413!3d51.696516749999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876203c8b177fcf%3A0x3f7e7c5763051e90!2sCheshunt%2C+Waltham+Cross%2C+Hertfordshire+EN8+8TY!5e0!3m2!1sen!2suk!4v1422308425927" style="border:0"></iframe>
                     </div>
                   </div>
               </div>
@@ -254,10 +254,10 @@
     <ul id="sidenav" class="sidenav">
       <li><a href="#home"><span class="dot"></span><span class="label">Home</span></a></li>
       <li><a href="#about"><span class="dot"></span><span class="label">About</span></a></li>
-      <li><a href="#skills"><span class="dot"></span><span class="label">Skills</span></a></a></li>
-      <li><a href="#recent-projects"><span class="dot"></span><span class="label">Recent projects</span></a></a></li>
-      <li><a href="#other-projects"><span class="dot"></span><span class="label">Other projects</span></a></a></li>
-      <li><a href="#contact"><span class="dot"></span><span class="label">Contact</span></a></a></li>
+      <li><a href="#skills"><span class="dot"></span><span class="label">Skills</span></a></li>
+      <li><a href="#recent-projects"><span class="dot"></span><span class="label">Recent projects</span></a></li>
+      <li><a href="#other-projects"><span class="dot"></span><span class="label">Other projects</span></a></li>
+      <li><a href="#contact"><span class="dot"></span><span class="label">Contact</span></a></li>
     </ul>
   </aside>
 
@@ -267,6 +267,7 @@
   <!-- bower:js -->
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <!-- endbower -->
+  <script src="bower_components/jquery-validation/dist/jquery.validate.js"></script>
   <script src="bower_components/jquery.parallax/jquery.parallax.js"></script>
   <script src="bower_components/parallax/deploy/jquery.parallax.js"></script>
   <script src="bower_components/jquery.localScroll/jquery.localScroll.js"></script>

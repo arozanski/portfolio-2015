@@ -1,0 +1,158 @@
+.group { 
+	position:relative; 
+	margin-bottom: 1.5625rem; 
+}
+
+form {
+	margin-top: 1.5625rem;
+}
+
+fieldset {
+	border: none;
+}
+
+input,
+textarea {
+	padding: 0.625rem 0.625rem 0.625rem 0.3125rem;
+	display: block;
+	width: 100%;
+	border: none;
+	border-bottom: 0.125rem solid #757575;
+
+	&.error {
+		background: #FFCDD2;
+	}
+
+	&.valid {
+		background: rgb(66, 184, 221);
+	}
+}
+
+input:focus,
+textarea:focus,
+button:focus { 
+	outline: none; 
+}
+
+label {
+	color: #999; 
+	position: absolute;
+	pointer-events: none;
+	left: 0.3125rem;
+	top: 0.625rem;
+	transition: 0.2s ease all; 
+	-moz-transition :0.2s ease all; 
+	-webkit-transition: 0.2s ease all;
+
+	&.error {
+		right: 0;
+		left: auto;
+	}
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label,
+textarea:focus ~ label, textarea:valid ~ label {
+	top: -1.25rem;
+
+	&.error {
+		color: #d23f31;
+	}
+}
+
+/* BOTTOM BARS ================================= */
+.bar { 
+	position: relative; 
+	display: block; 
+	width: 100%; 
+}
+
+.bar:before, 
+.bar:after {
+	content: '';
+	height: 0.125rem; 
+	width: 0;
+	bottom: 0.125rem; 
+	position: absolute;
+	background: #5264AE; 
+	transition: 0.2s ease all; 
+	-moz-transition: 0.2s ease all; 
+	-webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+	left: 50%;
+}
+
+.bar:after {
+ 	right: 50%; 
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after
+textarea:focus ~ .bar:before, textarea:focus ~ .bar:after {
+ 	width: 50%;
+}
+
+.textarea.bar:before {
+	right: 50%;
+}
+
+.textarea.bar:after {
+	left: 50%; 
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+	position: absolute;
+	height: 60%; 
+	width: 6.25rem; 
+	top: 25%; 
+	left: 0;
+	pointer-events: none;
+	opacity: 0.5;
+}
+
+/* active state */
+input:focus ~ .highlight,
+textarea:focus ~ .highlight {
+	-webkit-animation: inputHighlighter 0.3s ease;
+	-moz-animation: inputHighlighter 0.3s ease;
+	animation: inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighterRed {
+	from { background: #5264AE; }
+	to { width: 0; background: transparent; }
+}
+@-moz-keyframes inputHighlighterRed {
+	from { background: #5264AE; }
+	to { width: 0; background: transparent; }
+}
+@keyframes inputHighlighterRed {
+	from { background: #5264AE; }
+	to { width: 0; background: transparent; }
+}
+
+textarea {
+	resize: none;
+	height: 4.6875rem;
+}
+
+button {
+	background: #0f9d58;
+	border: none;
+	color: #fff;
+	float: right;
+	padding: 0.625rem 0.9375rem;
+	margin-top: -0.625rem;
+}
+
+.red {
+	color: #d23f31;
+}
+
+.message {
+	display: none;
+}
