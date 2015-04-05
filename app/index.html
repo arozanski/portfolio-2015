@@ -31,7 +31,7 @@
         <div class="pure-g">
           <div class="pure-u-1 pure-u-md-1-2"></div>
           <div class="pure-u-1 pure-u-md-1-2 info">
-            <div class="pure-g">
+            <div class="pure-g name-wrap">
               <a class="relative" href="#about">
                 <div class="hover-frame"></div>
                 <div class="pure-u-1-4"><img class="pure-img" id="mephoto" src="images/me.jpg" alt="My Photo"></div>
@@ -43,13 +43,13 @@
             </div>
             <div class="pure-g">
               <div class="pure-u-3-4 relative">
-                <a href="#recent-projects">
+                <a href="#recent-projects" id="rc-link">
                   <div class="hover-frame"></div>
                   <img class="pure-img" src="images/projects/thmbs/dyson-v6.png">
                   <span class="box-title">Recent projects</span>
                 </a>
               </div>
-              <div class="pure-u-1-4 contact relative">
+              <div class="pure-u-1-4 contact relative" id="contact-box">
                 <a href="#contact">
                   <div class="hover-frame"></div>
                   <i class="fa fa-envelope fa-4x"></i>
@@ -186,11 +186,63 @@
       </section> <!--#other-projects-->
 
       <section id="contact" class="contact">
-        <div class="story">
+        <div class="story l-box">
             <div class="pure-g">
               <div class="pure-u-1">
                 <h2><i class="fa fa-envelope-o"></i>contact</h2>
-                  <p>ipsum lorem</p>
+                  <div class="pure-g">
+                    <div class="pure-u-1"> 
+                      <ul class="social">
+                        <li class="bitbucket">
+                            <a href="https://bitbucket.org/arozanski" title="Armand Rozanski @ Bitbucket"><i class="fa fa-bitbucket"></i></a>
+                        </li>
+                        <li class="github">
+                            <a href="https://github.com/arozanski" title="Armand Rozanski @ Github"><i class="fa fa-github"></i></a>
+                        </li>
+                        <li class="linkedin">
+                            <a href="http://www.linkedin.com/pub/armand-rozanski/3a/4a3/839" title="Armand Rozanski @ LinkedIn"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        <li class="skype">
+                            <a href="skype:armand.rozanski?call" title="Armand Rozanski @ Skype"><i class="fa fa-skype"></i></a>
+                        </li>
+                        <li class="google">
+                            <a href="https://plus.google.com/u/0/+ArmandR%C3%B3%C5%BCa%C5%84ski/about" title="Armand Rozanski @ Google+"><i class="fa fa-google-plus"></i></a>
+                        </li>
+                    </ul>
+                    </div>
+                  </div>
+                  <div class="pure-g">
+                    <div class="pure-u-1 pure-u-md-1-2">
+                      <form id="contact" class="pure-form pure-form-stacked">
+                        <fieldset>
+                          <div class="group">      
+                              <input class="pure-input-1" type="text" name="name" id="name">
+                              <span class="highlight"></span>
+                              <span class="bar"></span>
+                              <label for="name">Name</label>
+                            </div>
+                            <div class="group">      
+                              <input class="pure-input-1" type="text" name="email" id="email">
+                              <span class="highlight"></span>
+                              <span class="bar"></span>
+                              <label for="email">Email</label>
+                            </div>
+                            <div class="group">      
+                              <textarea class="pure-input-1" type="text" name="message" id="message"></textarea>
+                              <span class="highlight"></span>
+                              <span class="bar textarea"></span>
+                              <label for="message">Message</label>
+                            </div>
+                          <button type="submit" id="submit">SEND</button>
+                          <div class="message error red" id="errorMsg">Error, unable to send <span class="close">x</span></div>
+                          <div class="message success" id="successMsg">Message sent, thank you! <span class="close">x</span></div>
+                        </fieldset>
+                      </form>
+                    </div>
+                    <div class="pure-u-1 pure-u-md-1-2">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2472.9960846321283!2d-0.028100149999988413!3d51.696516749999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876203c8b177fcf%3A0x3f7e7c5763051e90!2sCheshunt%2C+Waltham+Cross%2C+Hertfordshire+EN8+8TY!5e0!3m2!1sen!2suk!4v1422308425927" width="100%" height="300" frameborder="0" style="border:0"></iframe>
+                    </div>
+                  </div>
               </div>
             </div>
           </div> 
@@ -208,6 +260,8 @@
       <li><a href="#contact"><span class="dot"></span><span class="label">Contact</span></a></a></li>
     </ul>
   </aside>
+
+  <footer><p>Copyright &copy; 2015 - Armand Rozanski. All rights reserved.</p></footer>
 
   <!-- build:js(.) scripts/vendor.js -->
   <!-- bower:js -->

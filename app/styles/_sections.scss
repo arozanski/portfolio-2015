@@ -58,6 +58,10 @@ section {
 				background: $orange;
 			}
 
+			.name-wrap a {
+				float: left;
+			}
+
 			@media screen and (min-width: $md) {
 				margin: 4.375rem 9.375rem 0 -9.375rem;
 			}
@@ -320,9 +324,19 @@ section {
 	}
 
 	&.contact {
-		background: #ccc;
-		height: 400px;
-		margin: 0 auto;
-		padding: 40px 0 0 0;
+		background: $white;
+		color: $black;
+
+		a {
+    		color: $grey;
+  		}
+
+  		.social {
+  			list-style: none;
+  			
+  			li {
+  				float: left;
+  			}
+  		}
 	}
 }

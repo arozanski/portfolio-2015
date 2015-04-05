@@ -45,6 +45,17 @@ var app = (function () {
 		$('#name').css({
 			'height': $('#mephoto').width()
 		});
+
+		if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+		    $('#contact-box').css({
+				'height': $('#rc-link').height()
+			});
+
+			$('aside .label').css({
+				'top': '11px'
+			});
+		}
+		
 	};
 
 	var _parallax2 = function() {
