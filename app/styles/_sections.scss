@@ -41,7 +41,6 @@ section {
 	/* section specific */
 	&.home {
 		background:url(../images/background1.png) center top no-repeat fixed;
-		height: 37.5rem;
 		margin: 0 auto;
 		padding: 0;
 
@@ -51,6 +50,7 @@ section {
 
 				h2 {
 					margin-bottom: 0;
+					font-size: .8rem;
 				}
 			}
 
@@ -302,6 +302,10 @@ section {
 	&.other-projects {
 		//background: url(../images/background3.png) 50% 0 no-repeat fixed;
 		color: white; 
+
+		h2 {
+			margin-left: 1em;
+		}
 
 		.project {
 			position: relative;
