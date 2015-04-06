@@ -11,6 +11,12 @@ fieldset {
 	border: none;
 }
 
+iframe {
+	max-width: 100%;
+	width: 100%;
+	min-height: 18.75rem;
+}
+
 input,
 textarea {
 	padding: 0.625rem 0.625rem 0.625rem 0.3125rem;
@@ -24,7 +30,7 @@ textarea {
 	}
 
 	&.valid {
-		background: rgb(66, 184, 221);
+		background: rgba(66, 184, 221, 0.2);
 	}
 }
 
@@ -74,7 +80,7 @@ textarea:focus ~ label, textarea:valid ~ label {
 	width: 0;
 	bottom: 0.125rem; 
 	position: absolute;
-	background: #5264AE; 
+	background: $blue; 
 	transition: 0.2s ease all; 
 	-moz-transition: 0.2s ease all; 
 	-webkit-transition: 0.2s ease all;
@@ -141,7 +147,7 @@ textarea {
 }
 
 button {
-	background: #0f9d58;
+	background: $green;
 	border: none;
 	color: #fff;
 	float: right;
