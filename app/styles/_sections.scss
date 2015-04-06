@@ -23,18 +23,20 @@ section {
 	.icon {
 		position: absolute;
 		right: 5rem;
-		bottom: 0;
-		display: none;
+		top: 60%;
 
+		.fa {
+			display: none;
 
-		@media screen and (min-width: $sm) and (max-width: $lg) {
-			display: inline-block;
-			font-size: 5em;
-		}
+			@media screen and (min-width: $sm) and (max-width: $lg) {
+				display: inline-block;
+				font-size: 5em;
+			}
 
-		@media screen and (min-width: $lg) {
-			display: inline-block;
-			font-size: 7.5rem;
+			@media screen and (min-width: $lg) {
+				display: inline-block;
+				font-size: 7.5rem;
+			}
 		}
 	}
 
@@ -44,6 +46,10 @@ section {
 		margin: 0 auto;
 		padding: 0;
 
+		@media screen and (min-width: $md) {
+			padding-bottom: 2rem;
+		}
+
 		.info {
 			.name {
 				background: $blue;
@@ -51,6 +57,10 @@ section {
 				h2 {
 					margin-bottom: 0;
 					font-size: .8rem;
+
+					@media screen and (max-width: $sm) and (orientation: landscape) {
+						font-size: 1.6rem;
+					}
 				}
 			}
 
@@ -87,6 +97,11 @@ section {
 	 		bottom: 0; 
 	 		right: 0;
 
+	 		@media screen and (max-width: $sm) and (orientation: landscape) {
+    			font-size: 3rem;
+    			height: 3rem;
+  			}
+
 	 		@media screen and (min-width: $sm) and (max-width: $lg) { 
 	 			font-size: 3em;
 	 			height: 3rem;
@@ -111,7 +126,10 @@ section {
 	&.skills {
 		background: url(../images/background2.png) 50% 0 no-repeat fixed;
 		color: white;
-		padding: 6.25rem 0 0 0; 
+
+		h2 {
+			margin-bottom: 0.8em;
+		}
 
 		.skill {
 			height: 6.375rem;
@@ -244,36 +262,42 @@ section {
 	}
 
 	&.recent-projects {
+		hr {
+			margin: 1.5rem 0;
+		}
+
 		.recent-project-wrapper {
 			text-align: center;
 
 			.desktop {
+				width: 100%;
+
 				img {
-					width: 75%;
+					width: 100%;
 				}
 			}
 
 			.tablet {
-				right: 0;
-				bottom: 0;
-				left: inherit !important;
-				top: 50% !important;
+				width: 100%;
 
 				img {
-					width: 75%;
+					max-width: 50%;
+					margin: 55% -40% 0 0;
 				}
 			}
 
 			.mobile {
-				top: 45% !important;
-				left: 10% !important;
+				width: 100%;
 
 				img {
-					width: 75%;
+					max-width: 20%;
+					margin: 49% 0 0 -63%;
 				}
 			}
 
 			.scene {
+				padding: 0;
+
 				.desktop {
 					opacity: 0;
 					transition: opacity 1.5s ease .3s;
@@ -304,7 +328,8 @@ section {
 		color: white; 
 
 		h2 {
-			margin-left: 1em;
+			margin-left: 1rem;
+			margin-bottom: 0.8rem;
 		}
 
 		.project {
@@ -320,8 +345,20 @@ section {
 				bottom: 0;
 				background: rgba(100, 100, 100, 0.3);
 
+				p {
+					width: 77%;
+					float: left;
+					margin: 1rem 0 0 1rem;
+				}
+
 				a {
 					float: right;
+					margin: 0.5rem 0.5rem 0.5rem 0;
+
+					.fa {
+						font-size: 1rem;
+						height: 1rem;
+					}
 				}
 			}
 		}
@@ -337,9 +374,15 @@ section {
 
   		.social {
   			list-style: none;
+			padding: 0;
+			margin: 2rem 0;
+			display: block;
+			height: 2rem;
   			
   			li {
   				float: left;
+  				width: 20%;
+  				text-align: center;
   			}
   		}
 	}
