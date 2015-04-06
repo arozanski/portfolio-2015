@@ -10,6 +10,7 @@ section {
 		height: 100%;
 		opacity: 0;
 		transition: opacity .3s ease;
+		z-index: 9999;
 	}
 
 	a:hover .hover-frame {
@@ -58,9 +59,21 @@ section {
 					margin-bottom: 0;
 					font-size: .8rem;
 
-					@media screen and (max-width: $sm) and (orientation: landscape) {
-						font-size: 1.6rem;
-					}
+					  	@media screen and (max-width: $sm) and (orientation: landscape) {
+							font-size: 1.6rem;
+						}
+
+						@media screen and (min-width: $sm) and (max-width: $md) {
+							font-size: 1.6rem;
+						}
+
+						@media screen and (min-width: $md) {
+							font-size: 1.2rem;
+						}
+
+						@media screen and (min-width: $lg) {
+							font-size: 1.6rem;
+						}
 				}
 			}
 
@@ -85,6 +98,7 @@ section {
 			padding: 0.625rem 1.25rem;
 			font-weight: 100;
 			text-transform: uppercase;
+			z-index: 9999;
 		}
 
 		.fa {

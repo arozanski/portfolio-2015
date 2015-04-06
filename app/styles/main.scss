@@ -59,6 +59,18 @@ h1 {
   @media screen and (max-width: $sm) and (orientation: landscape) {
     font-size: 2rem;
   }
+
+  @media screen and (min-width: $sm) and (max-width: $md) {
+    font-size: 2rem;
+  }
+
+  @media screen and (min-width: $md) {
+    font-size: 1.5rem;
+  }
+
+  @media screen and (min-width: $lg) {
+    font-size: 2rem;
+  }
 } 
 
 h2 {
@@ -78,4 +90,10 @@ h2, h3 {
 .fa {
   font-size: 2rem;
   height: 2rem;
+}
+
+#slides,
+.slidesjs-navigation,
+.slidesjs-pagination {
+  display:none;
 }
