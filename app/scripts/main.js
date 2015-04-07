@@ -105,9 +105,10 @@ var app = (function () {
             },
             submitHandler: function() {
                 var url = 'http://armand.rozanski.pro/mailsender.php';
-                $.post(url, $('#contact').serialize(), function() {
+                $.post(url, $('#contactFrm').serialize(), function() {
                     $('#successMsg').fadeIn(300);
-                    $('#contact input[type="text"]').val('');
+                    $('#name').val('');
+                    $('#email').val('');
                     $('#contact textarea').val('');
                 }).fail(function() {
                     $('#errorMsg').fadeIn(300);
