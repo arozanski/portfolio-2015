@@ -19,6 +19,11 @@ section {
 
 	.story {
 		min-height: 18.75rem;
+
+		@media screen and (min-width: 80em) {
+			max-width: 75rem;
+			margin: 0 auto;
+		}
 	}
 
 	.icon {
@@ -340,6 +345,12 @@ section {
 	&.other-projects {
 		//background: url(../images/background3.png) 50% 0 no-repeat fixed;
 		color: white; 
+
+		@media screen and (min-width: $lg) { 
+			.story {
+				padding-bottom: 2rem;
+			}
+		}
 
 		h2 {
 			margin-left: 1rem;
