@@ -365,12 +365,13 @@ section {
 				position: absolute;
 				width: 100%;
 				bottom: 0;
-				background: rgba(100, 100, 100, 0.3);
+				background: rgba(10, 0, 0, 0.5);
 
 				p {
 					width: 77%;
 					float: left;
 					margin: 1rem 0 0 1rem;
+					text-shadow: 1px 1px 2px #666;
 				}
 
 				a {
