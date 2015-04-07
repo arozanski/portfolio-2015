@@ -15,7 +15,8 @@ var app = (function () {
 		window.onload = _adjust;
 		_inview($('#skills'));	
 		_inview($('#scene-v6'));	
-		_inview($('#scene-360'));	
+		_inview($('#scene-360'));
+		_scrollToTop();	
 	};
 
 	var _inview = function(el) {
@@ -121,6 +122,34 @@ var app = (function () {
         	e.preventDefault();
             $(this).parent().fadeOut(300);
         });
+	};
+
+	var _scrollToTop = function() {
+		$('body').scrollToTop({
+			distance: 200,
+			speed: 1000,
+			easing: 'linear',
+			animation: 'slide', // fade, slide, none
+			animationSpeed: 500,
+
+			mobile: {
+			    width: 768,
+			    distance: 100,
+			    speed: 1000,
+			    easing: 'easeInOutElastic',
+			    animation: 'slide',
+			    animationSpeed: 200
+			},
+
+			trigger: null, // Set a custom triggering element. Can be an HTML string or jQuery object
+			target: null, // Set a custom target element for scrolling to. Can be element or number
+			text: '<i class="fa fa-angle-double-up"></i>', // Text for element, can contain HTML
+
+			skin: null,
+			throttle: 250,
+
+			namespace: 'scrollToTop'
+		});
 	};
 
 	return {
