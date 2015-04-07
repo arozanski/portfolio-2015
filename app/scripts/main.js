@@ -8,6 +8,8 @@ var app = (function () {
 		_parallax();
 		_parallax2();
 		_form();
+
+		new GnMenu(document.getElementById('gn-menu'));
 	};
 
 	var _bind = function() {
@@ -16,7 +18,9 @@ var app = (function () {
 		_inview($('#skills'));	
 		_inview($('#scene-v6'));	
 		_inview($('#scene-360'));
-		_scrollToTop();	
+		if(navigator.userAgent.toLowerCase().indexOf('firefox') === -1) {
+			_scrollToTop();	
+		}
 	};
 
 	var _inview = function(el) {

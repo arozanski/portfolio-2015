@@ -5,6 +5,7 @@
 
 @import "breakpoints";
 @import "colours";
+@import "header";
 @import "sections";
 @import "aside";
 @import "form";
@@ -27,6 +28,12 @@ html {
 body {
   background: #242424;
   color: #fafafa;
+}
+
+main {
+  @media screen and (max-width: $md) {
+    padding-top: 3.75rem;
+  }
 }
 
 footer {

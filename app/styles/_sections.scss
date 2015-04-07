@@ -10,7 +10,7 @@ section {
 		height: 100%;
 		opacity: 0;
 		transition: opacity .3s ease;
-		z-index: 9999;
+		z-index: 999;
 	}
 
 	a:hover .hover-frame {
@@ -101,7 +101,7 @@ section {
 			padding: 0.625rem 1.25rem;
 			font-weight: 100;
 			text-transform: uppercase;
-			z-index: 9999;
+			z-index: 999;
 		}
 
 		.fa {

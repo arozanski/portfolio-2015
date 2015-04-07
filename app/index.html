@@ -24,6 +24,26 @@
     <!--[if lt IE 10]>
       <div style="position:fixed;top:0;left:0;right:0;bottom:0;background:black;z-index:999999999;text-align:center;"><a href="http://godarkforie.org/upgrade?lang=en"><img src="http://godarkforie.org/splash/en.jpg" alt="You are using an old version of Internet Explorer" /></a></div>
     <![endif]-->
+    <header>
+
+      <ul id="gn-menu" class="gn-menu-main">
+        <li class="gn-trigger">
+          <a class="gn-icon gn-icon-menu"><span>Menu</span></a>
+          <nav class="gn-menu-wrapper">
+            <div class="gn-scroller">
+              <ul class="gn-menu">
+                <li><a class="fa fa-home gn-icon" href="#home">Home</a></li>
+                <li><a class="fa fa-user gn-icon" href="#about">About</a></li>
+                <li><a class="fa fa-code gn-icon" href="#skills">Skills</a></li>
+                <li><a class="fa fa-exclamation-circle gn-icon" href="#recent-projects">The latest</a></li>
+                <li><a class="fa fa-cogs gn-icon" href="#other-projects">Projects</a></li>
+                <li><a class="fa fa-envelope gn-icon" href="#contact">Contact</a></li>
+              </ul>
+            </div><!-- /gn-scroller -->
+          </nav>
+        </li>
+      </ul>
+    </header>
     <main>
       <section id="home" class="home">
         <div class="story">
@@ -48,7 +68,6 @@
                       <img class="pure-img" src="images/thmbs/dyson-v6.jpg" alt="Dyson v6">  
                       <img class="pure-img" src="images/thmbs/dyson-360.jpg" alt="Dyson 360 eye"> 
                     </div>
-
                     <span class="box-title">Recent projects</span>
                   </a>
                 </div>
@@ -294,6 +313,8 @@
 
   <!-- build:js({app,.tmp}) scripts/main.js -->
   <script src="scripts/vendor/jquery.scrollToTop.js"></script>
+  <script src="scripts/vendor/classie.js"></script>    
+  <script src="scripts/vendor/gnmenu.js"></script>  
   <script src="scripts/vendor/jquery.slides.js"></script>
   <script src="scripts/main.js"></script>
   <!-- endbuild -->
